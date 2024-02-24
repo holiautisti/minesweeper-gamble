@@ -1,0 +1,2 @@
+# minesweeper-gamble
+celkem fire
