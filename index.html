@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper gamble</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Minesweeper gamble</h1>
+      <p>Account Balance: <span id="balance">1000</span></p>
+      <p>
+        Bet Amount:
+        <input
+          type="number"
+          class="input-field"
+          id="betAmount"
+          min="1"
+        /><button onclick="startGame()">Start Game</button>
+      </p>
+      <p>Current Bet: <span id="currentBet">0</span></p>
+      <div class="board" id="board"></div>
+      <p><button onclick="withdrawBet()">Withdraw Bet</button></p>
+      <p class="explanation">
+        How the game works:<span
+          >Bet any amount higher than 0. From the moment you start the game, the
+          bet amount gets divided by 4 and for every cell uncovered, you get
+          double. To earn back your bet, you have to uncover two cells.<b
+            >If you uncover a mine, you lose your entire bet!</b
+          ></span
+        >
+      </p>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
